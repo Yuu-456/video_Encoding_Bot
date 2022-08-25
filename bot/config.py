@@ -19,7 +19,7 @@ try:
     API_ID = config("API_ID", cast=int)
     API_HASH = config("API_HASH")
     BOT_TOKEN = config("BOT_TOKEN")
-    DEV = 1449986020
+    SUDO_USERS = config("SUDO_USERS")
     OWNER = config("OWNER")
     FFMPEG = config(
         "FFMPEG",
@@ -27,6 +27,6 @@ try:
     )
 except Exception as e:
     LOGS.info("Environment Vars Missing")
-    LOGS.info("something Went Wrong")
+    LOGS.info("Something Went Wrong")
     LOGS.info(str(e))
     exit(1)
